@@ -10,3 +10,10 @@ export const getWeatherByCity = (city) => {
             );
     };
 }
+
+export const deleteWeatherbyCity = (id) => {
+    return {
+        type:ACTION_TYPES.DELETE_WEATHER_BY_CITY,
+        payload:id
+    }
+}

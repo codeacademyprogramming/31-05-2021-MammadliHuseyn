@@ -7,6 +7,8 @@ export const reducer = (state = [], action) => {
                 ...state,
                 action.payload
             ];
+        case ACTION_TYPES.DELETE_WEATHER_BY_CITY:
+            return state.filter(city=>city.id !== action.payload);
         default:
             return state;
     }
