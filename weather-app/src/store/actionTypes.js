@@ -1,0 +1,3 @@
+export const ACTION_TYPES = {
+    GET_WEATHER_BY_CITY: "GET_WEATHER_BY_CITY"
+}
